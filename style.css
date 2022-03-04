@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.boxes {
+    background-color: blue;
+    display: none;
+    width: 700px;
+    line-height: 1.5;
+    font-size: 20px;
+    color: white;
+    padding: 30px 40px;
+    border-radius: 9px;
+    font-family: inherit;
+}
+
+.image {
+    height: 70px;
+    width: 70px;
+    display: inline;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.name {
+    display: inline;
+}
+
+.image-with-name {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.progresBar {
+    border-radius: 990px;
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: black;
+    height: 15px;
+    animation: progress 10s linear infinite;
+    transform-origin: left;
+}
+
+@keyframes progress {
+    0% {
+        transform: scaleX(0);
+    }
+}
+
+@media (max-width: 700px) {
+    .boxes {
+        width: 70vw;
+        padding: 20px;
+        margin: 0;
+        font-size: 19px;
+        border-radius: 40px;
+        line-height: 1.4;
+    }
+    .image {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+}
